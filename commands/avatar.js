@@ -3,13 +3,8 @@ const config = require('../package.json');
 
 module.exports.run = async (bot, message, args) => {
 
-
-
     const avatarEmbed = new Discord.MessageEmbed()
-
-    .setColor('#000000')
     .setAuthor(`Avatar | ${message.author.tag}`, message.author.avatarURL())
-
     .setImage(`${message.author.avatarURL()}?size=256`)
 
     if(!args[0]) return message.channel.send(avatarEmbed);
@@ -23,7 +18,6 @@ module.exports.run = async (bot, message, args) => {
     if(!aperson){
 
         let errorEmbed = new Discord.MessageEmbed()
-        .setColor("#ff0000")
         .setDescription(`Member Not Found: ${joinedargs}`);
 
         return message.channel.send(errorEmbed);
@@ -31,7 +25,6 @@ module.exports.run = async (bot, message, args) => {
     };
 
     const pfpEmbed = new Discord.MessageEmbed()
-    .setColor("#000000")
     .setAuthor(`Avatar | ${aperson.user.tag}`, message.author.avatarURL())
     .setImage(`${aperson.user.avatarURL()}?size=256`)
 
