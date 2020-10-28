@@ -16,6 +16,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "32bit",
-  aliases: ["roygbiv"],
-  description: "Pings CanvaCord."
+  aliases: ["bit32"],
+  description: "Makes your avatar a 32bit version of itself."
 }
