@@ -20,7 +20,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
     name: "meme",
-    aliases: ["kitten"], //kermitmemes
-    category: "meme",
-    description: "lol",
+    aliases: ["dankmeme", "showmethefunny"],
+    description: "Shows a random meme"
 }
