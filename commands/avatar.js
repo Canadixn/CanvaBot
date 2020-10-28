@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const config = require('../package.json');
 
 module.exports.run = async (bot, message, args) => {
-  
+
 
 
     const avatarEmbed = new Discord.MessageEmbed()
@@ -14,11 +14,11 @@ module.exports.run = async (bot, message, args) => {
 
     if(!args[0]) return message.channel.send(avatarEmbed);
 
-    
+
     let joinedargs = args.join(" ");
-    
-    let aperson = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(joinedargs) || 
-    message.guild.members.find(member => member.user.username == joinedargs) || message.guild.members.find(member => member.user.tag == joinedargs) || message.guild.members.find(member => member.user.username.toLowerCase().startsWith(joinedargs.toLowerCase())) || message.guild.members.find(member => member.nickname == joinedargs) || message.guild.members.find(member => member.nickname.startsWith(joinedargs)));
+
+    let aperson = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(joinedargs) ||
+    message.guild.members.find(member => member.user.username == joinedargs) || message.guild.members.find(member => member.user.tag == joinedargs) || message.guild.members.find(member => member.u>
 
     if(!aperson){
 
@@ -44,6 +44,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "avatar",
-  aliases: ["beautify"],
-  description: "Pings CanvaCord."
+  aliases: ["av"],
+  description: "Enlarges your avatar to a savable PNG Format."
 }
