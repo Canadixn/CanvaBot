@@ -20,7 +20,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
     name: "discord",
-    aliases: ["kitten"], //kermitmemes
-    category: "meme",
-    description: "lol",
+    aliases: ["disc", "dgg", "dis", "dc"],
+    description: "Generates an random image from r/discordapp"
 }
