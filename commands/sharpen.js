@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
         }
 
 const errorembed = new Discord.MessageEmbed()
-.setDescription("<:canvadenied:763570128062251008> Please use a number between **0 - 5**.");
+.setDescription("❌ Please use a number between **0 - 5**.");
   if (parseInt(args[0]) > 5 || parseInt(args[0]) < 0)
           return message.channel.send(errorembed).catch(console.error);
 
@@ -30,6 +30,6 @@ msg = args.join(`${sharpener}`);
 
 module.exports.help = {
   name: "sharpen",
-  aliases: ["beautify"],
-  description: "Pings CanvaCord."
+  aliases: ["sharp"],
+  description: "Sharpens your current avatar depending on the numerical # you choose for your argument(s)."
 }
