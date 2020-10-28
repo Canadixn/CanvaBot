@@ -55,7 +55,7 @@ If the bot successfully setup then trying to do **(your prefix)ping**  and see i
 
 ![img](https://cdn.discordapp.com/attachments/770760785873469473/771151835838152716/53814101dd0de08fe9e188d550cb931d.png)
 
-And that concludes the setup! If you have any issues please join our **[support](https://discord.gg/JRjtUy6)** server or issue this repo. The bot creator, Canadixn will eventually see your issue and try to resolve it for you...
+And that concludes the setup! If you have any issues please join our **[support](https://discord.gg/JRjtUy6)** server or issue this repo. The bot creator, Canadixn will eventually see your issue and try to resolve it for you... :)
 
 ## Discord
 [https://discord.gg/JRjtUy6](https://discord.gg/JRjtUy6)
