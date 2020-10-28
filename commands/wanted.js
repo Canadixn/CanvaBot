@@ -16,6 +16,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "wanted",
-  aliases: ["roygbiv"],
-  description: "Pings CanvaCord."
+  aliases: ["want"],
+  description: "Puts you or your mentioned's profile picture in a wanted poster!"
 }
