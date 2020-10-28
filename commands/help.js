@@ -10,7 +10,7 @@ const helpembed = new Discord.MessageEmbed()
 .addFields(
 
   { name: 'Commands:', value: 'https://canvabot.wordpress.com/', inline: true },
-  
+
   { name: 'Docs', value: 'Coming Soon!', inline: true },
 
   { name: 'Patreon', value: 'Coming Soon!', inline: false },
@@ -23,12 +23,11 @@ const helpembed = new Discord.MessageEmbed()
 
 message.channel.send(helpembed);
 
-} 
+}
 
 
 module.exports.help = {
   name: "help",
-  description: "Pings CanvaCord.",
-  aliases: []
+  description: "CanvaBot Help",
+  aliases: ["info"]
 }
-
