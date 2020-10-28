@@ -17,5 +17,5 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
   name: "rainbow",
   aliases: ["roygbiv"],
-  description: "Pings CanvaCord."
+  description: "Enlarges your avatar with a sweet rainbow filter."
 }
