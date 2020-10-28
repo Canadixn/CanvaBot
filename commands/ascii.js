@@ -25,7 +25,7 @@ msg = args.join(" ");
 module.exports.help = {
 
 name: "ascii",
-aliases: ["p"],
-description: "Show the music queue and now playing."
+aliases: ["texttoascii"],
+description: "Generates an ASCII Art from your text."
 
 }
