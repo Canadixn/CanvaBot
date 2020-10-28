@@ -58,8 +58,8 @@ module.exports.run = async (bot, message, args) => {
     }
 
 
-module.exports.help = {
-    name: "covid",
-    description: "Track a country or worldwide COVID-19 cases"
-
-}
+    module.exports.help = {
+        name: "covid",
+        aliases: ["coronavirus"],
+        description: "Shows stats of the coronavirus."
+      }
