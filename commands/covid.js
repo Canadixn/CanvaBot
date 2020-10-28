@@ -5,9 +5,6 @@ const config = require('../config.json')
 module.exports.run = async (bot, message, args) => {
 
         let countries = args.join(" ");
-
-        //Credit to Sarastro#7725 for the command :)
-
         const noArgs = new Discord.MessageEmbed()
         .setTitle('Missing arguments')
         .setThumbnail("https://cdn.discordapp.com/attachments/737385723703066706/749493267690946570/thediplomat-2020-04-01.png")
