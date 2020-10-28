@@ -1,23 +1,15 @@
 const punList = require('../puns.json');
-
 const pun = punList;
-
 
 const rn = require('random-number');
 const { MessageEmbed } = require('discord.js');
 
-
-
-
 module.exports.run = async (bot, message, args) => {
 
-
     let r = rn({
-
         min: 0,
         max: pun.length - 1,
         integer: true
-    
     });
 
     let image = pun[r];
@@ -28,8 +20,6 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor("Pun", message.author.avatarURL())
         .setDescription(image);
 
-
-
     if (!message.mentions.users.first()) return message.channel.send(embed);
 
 
@@ -38,7 +28,8 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
 
 name: "pun",
-aliases: ["p"],
-description: "Show the music queue and now playing."
+aliases: ["joke", "tellmeajoke", "dadjoke"],
+description: "Shows a random joke"
 
 }
+
