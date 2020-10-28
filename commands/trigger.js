@@ -16,7 +16,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "trigger",
-  aliases: ["triggered"],
-  description: "Pings CanvaCord."
+  aliases: ["triggered", "mad"],
+  description: "Puts an image in a triggered meme format."
 }
-
