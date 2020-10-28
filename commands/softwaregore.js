@@ -20,7 +20,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
     name: "softwaregore",
-    aliases: ["sg"], //kermitmemes
-    category: "meme",
-    description: "lol",
+    aliases: ["sg"],
+    description: "Generates a random image from r/softwaregore"
 }
