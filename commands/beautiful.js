@@ -16,6 +16,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "beautiful",
-  aliases: ["beautify"],
-  description: "Pings CanvaCord."
+  aliases: ["beautify", "thatsbeautiful"],
+  description: "Puts yours or your targeted friend's image in a 'beautiful' meme format."
 }
