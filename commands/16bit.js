@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     let avatar = m.user.displayAvatarURL({dynamic: false, format: "png", size: 256});
 
     let image = await canvacord.Canvas.pixelate(avatar, 16);
-    let attachment = new Discord.MessageAttachment(image, 'rainbow.png');
+    let attachment = new Discord.MessageAttachment(image, 'sixteenbit.png');
 
     message.channel.send(attachment);
 
@@ -16,6 +16,6 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.help = {
   name: "16bit",
-  aliases: ["roygbiv"],
-  description: "Pings CanvaCord."
+  aliases: ["bit16"],
+  description: "Makes your avatar a 16bit version of itself."
 }
