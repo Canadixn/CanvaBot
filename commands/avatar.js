@@ -12,9 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
     let joinedargs = args.join(" ");
 
-    let aperson = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(joinedargs) ||
-    message.guild.members.find(member => member.user.username == joinedargs) || message.guild.members.find(member => member.user.tag == joinedargs) || message.guild.members.find(member => member.u>
-
+    let aperson = message.guild.member(message.mentions.users.first() || message.guild.members.get(joinedargs) || message.guild.members.find(member => member.user.username == joinedargs) || message.guild.members.find(member => member.user.tag == joinedargs) || message.guild.members.find(member => member.user.username.toLowerCase().startsWith(joinedargs.toLowerCase())) || message.guild.members.find(member => member.nickname == joinedargs) || message.guild.members.find(member => member.nickname.startsWith(joinedargs)));
     if(!aperson){
 
         let errorEmbed = new Discord.MessageEmbed()
