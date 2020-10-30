@@ -29,10 +29,13 @@ this).
     "discord.js": "^12.4.1",
     "figlet": "^1.5.0",
     "jimp": "^0.16.1",
+    "mathjs": "^3.8.1",
     "node-fetch": "^2.6.1",
     "random-number": "0.0.9",
     "random-puppy": "^1.1.0",
     "request": "^2.88.2",
+    "urban": "^0.3.2"
+
 ```
 
 #### config.json
