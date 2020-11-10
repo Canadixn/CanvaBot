@@ -4,7 +4,7 @@ const config = require('../package.json');
 module.exports.run = async (bot, message, args) => {
 
     const avatarEmbed = new Discord.MessageEmbed()
-    .setAuthor(`Avatar | ${message.author.tag}`, message.author.avatarURL())
+    .setAuthor(`Avatar | ${message.author.tag}`, message.author.displayAvatarURL())
     .setImage(`${message.author.avatarURL()}?size=256`)
 
     if(!args[0]) return message.channel.send(avatarEmbed);
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
     };
 
     const pfpEmbed = new Discord.MessageEmbed()
-    .setAuthor(`Avatar | ${aperson.user.tag}`, message.author.avatarURL())
+    .setAuthor(`Avatar | ${aperson.user.tag}`, message.author.displayAvatarURL())
     .setImage(`${aperson.user.avatarURL()}?size=256`)
 
     message.channel.send(pfpEmbed);
