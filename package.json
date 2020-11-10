@@ -1,6 +1,6 @@
 {
   "name": "canvabot",
-  "version": "a1.3.5",
+  "version": "a1.3.9",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
