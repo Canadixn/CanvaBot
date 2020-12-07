@@ -1,6 +1,6 @@
 {
   "name": "canvabot",
-  "version": "a1.4.0 - The Canvas Update",
+  "version": "a1.4.2 - The Minecraft Update",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,17 @@
   "author": "Canadixn",
   "license": "MIT",
   "dependencies": {
-    "canvacord": "^5.0.7",
+    "canvacord": "^5.0.8",
     "common-tags": "^1.8.0",
     "discord.js": "^12.4.1",
+    "easier-iss": "^1.1.0",
     "figlet": "^1.5.0",
+    "humanize-duration": "^3.24.0",
     "jimp": "^0.16.1",
     "mathjs": "^3.8.1",
+    "mc-achievements": "^1.0.2",
+    "minecraft-information": "^0.2.0",
+    "minecraft-pinger": "^1.0.5",
     "node-fetch": "^2.6.1",
     "random-number": "0.0.9",
     "random-puppy": "^1.1.0",
@@ -32,6 +37,3 @@
   "devDependencies": {},
   "description": ""
 }
-
-
-

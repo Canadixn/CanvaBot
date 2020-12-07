@@ -92,9 +92,10 @@ bot.on("ready", async () => {
     bot.on("message", async message => {
       if(message.author.bot) return;
       if(message.channel.type === "dm") return;
-      let prefix = settings.prefix
+      let prefix = settings.prefix;
+      let prefix2 = settings.prefix2
       let messageArray = message.content.split(" ");
-      let args = message.content.slice(prefix.length).trim().split(/ +/g);
+      let args = message.content.slice(prefix.length || prefix2.length).trim().split(/ +/g);
       let cmd = args.shift().toLowerCase();
       let commandfile;
 
@@ -104,7 +105,7 @@ bot.on("ready", async () => {
       commandfile = bot.commands.get(bot.aliases.get(cmd));
     }
 
-        if (!message.content.startsWith(prefix)) return;
+if(!message.content.startsWith(prefix)) return;
 
     try {
       commandfile.run(bot, message, args);
@@ -113,6 +114,32 @@ bot.on("ready", async () => {
 
         }}
 )});
+
+
+    bot.on("message", async message => {
+      if(message.author.bot) return;
+      if(message.channel.type === "dm") return;
+      let prefix = settings.prefix2;
+      let messageArray = message.content.split(" ");
+      let args = message.content.slice(prefix.length || prefix2.length).trim().split(/ +/g);
+      let cmd = args.shift().toLowerCase();
+      let commandfile;
+
+      if (bot.commands.has(cmd)) {
+        commandfile = bot.commands.get(cmd);
+    } else if (bot.aliases.has(cmd)) {
+      commandfile = bot.commands.get(bot.aliases.get(cmd));
+    }
+
+if(!message.content.startsWith(prefix)) return;
+
+    try {
+      commandfile.run(bot, message, args);
+
+    } catch (e) {
+
+        }
+});
 
 
     bot.login(settings.token);
