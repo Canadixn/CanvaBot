@@ -1,3 +1,6 @@
+**WARNING CANVABOT IS NOW UNDER THE Attribution-NonCommercial-NoDerivatives 4.0 International LICENSE. READ [THIS](https://creativecommons.org/licenses/by-nc-nd/4.0/) FOR MORE INFO**
+
+
 ![img](https://cdn.discordapp.com/attachments/770760785873469473/771146537102737469/New_Project_3.png)
 
 **A Simple Lightweight Image-manipulative Discord Bot using the Discord.JS Library.**
